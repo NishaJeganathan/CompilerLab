@@ -1,0 +1,9 @@
+LAB 1:
+1. Flex is a tool used to generate lexical anayzer easily
+
+compiling a lex file
+lex file.l
+gcc lex.yy.c -o file
+./file
+
+question 1: Design a lexical analyzer that could ignore redundant spaces, tabs, new lines and comments in a source program (C language).
