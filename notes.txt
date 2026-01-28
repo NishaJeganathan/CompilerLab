@@ -1,4 +1,19 @@
 LAB 1:
+git add .
+git commit -m "some message"
+git push
+
+
+int main(int argc, char *argv[])
+{
+    if (argc < 2) return 1;
+    yyin = fopen(argv[1], "r");
+    if (!yyin) return 1;
+    yylex();
+    fclose(yyin);
+    return 0;
+}
+ this is for opening a file and reading from that 
 1. Flex is a tool used to generate lexical anayzer easily
 
 compiling a lex file

@@ -1,5 +1,5 @@
 %option noyywrap
-
+%x COMMENT
 %{
 #include <stdio.h>
 extern FILE *yyin;
@@ -13,6 +13,13 @@ extern FILE *yyin;
 [ \t\n]+      ;   /* ignore whitespace */
 "//".*                ;
 .             { printf("CHAR: %s\n", yytext); }
+"/*"          { BEGIN(COMMENT); }
+
+<COMMENT>"*/" { BEGIN(INITIAL); }
+
+<COMMENT>.    ;
+<COMMENT>\n   ;
+
 %%
 
 
