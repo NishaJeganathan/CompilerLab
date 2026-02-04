@@ -22,3 +22,12 @@ gcc lex.yy.c -o file
 ./file
 
 question 1: Design a lexical analyzer that could ignore redundant spaces, tabs, new lines and comments in a source program (C language).
+
+
+--------------------------------------------------------*******************************************---------------------------------------------------------
+1. Introduction Section on YACC (Bison).
+2. Sample program demo (Calculator)
+3. Write code for syntax analysis of expressions involving arithmetic, boolean and relational operators in C. Define the tokens in Lex for 
+identifiers and numbers and use it in Yacc.
+3. (ii) Write code for synntax analysis of if and if else condition constructs in C
+4. Construct a symbol table which holds information (name, datatype, offset, size, scope) on valid identifiers.
