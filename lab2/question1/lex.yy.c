@@ -456,9 +456,9 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "sample.l"
-#line 2 "sample.l"
-#include "sample.tab.h"
+#line 1 "prog.l"
+#line 2 "prog.l"
+#include "prog.tab.h"
 #include <stdio.h>
 
 extern FILE *yyin;
@@ -680,7 +680,7 @@ YY_DECL
 		}
 
 	{
-#line 8 "sample.l"
+#line 8 "prog.l"
 
 
 #line 687 "lex.yy.c"
@@ -742,78 +742,78 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 10 "sample.l"
+#line 10 "prog.l"
 { return IF; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 11 "sample.l"
+#line 11 "prog.l"
 { return ELSE; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "sample.l"
+#line 13 "prog.l"
 { return ID; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 17 "sample.l"
+#line 17 "prog.l"
 { return LPAREN; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 18 "sample.l"
+#line 18 "prog.l"
 { return RPAREN; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 19 "sample.l"
+#line 19 "prog.l"
 { return LBRACE; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 20 "sample.l"
+#line 20 "prog.l"
 { return RBRACE; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 21 "sample.l"
+#line 21 "prog.l"
 { return SEMICOLON; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 22 "sample.l"
+#line 22 "prog.l"
 { return ARITH; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 23 "sample.l"
+#line 23 "prog.l"
 { return RELOP;}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 24 "sample.l"
+#line 24 "prog.l"
 { return LOGIC; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 25 "sample.l"
+#line 25 "prog.l"
 { return ASSIGN; }
 	YY_BREAK
 case 13:
 /* rule 13 can match eol */
 YY_RULE_SETUP
-#line 26 "sample.l"
+#line 26 "prog.l"
 ;   /* ignore spaces */
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 28 "sample.l"
+#line 28 "prog.l"
 ;   /* ignore other characters */
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 30 "sample.l"
+#line 30 "prog.l"
 ECHO;
 	YY_BREAK
 #line 820 "lex.yy.c"
@@ -1821,7 +1821,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 30 "sample.l"
+#line 30 "prog.l"
 
 
 int yywrap() { return 1; }

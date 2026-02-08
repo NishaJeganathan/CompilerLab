@@ -35,8 +35,8 @@
    especially those whose name start with YY_ or yy_.  They are
    private implementation details that can be changed or removed.  */
 
-#ifndef YY_YY_Y_TAB_H_INCLUDED
-# define YY_YY_Y_TAB_H_INCLUDED
+#ifndef YY_YY_PROG_TAB_H_INCLUDED
+# define YY_YY_PROG_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -57,43 +57,29 @@ extern int yydebug;
     IF = 258,                      /* IF  */
     ELSE = 259,                    /* ELSE  */
     ID = 260,                      /* ID  */
-    NUMBER = 261,                  /* NUMBER  */
-    LT = 262,                      /* LT  */
-    GT = 263,                      /* GT  */
-    LE = 264,                      /* LE  */
-    GE = 265,                      /* GE  */
-    EQ = 266,                      /* EQ  */
-    NE = 267,                      /* NE  */
-    ASSIGN = 268,                  /* ASSIGN  */
-    LPAREN = 269,                  /* LPAREN  */
-    RPAREN = 270,                  /* RPAREN  */
-    LBRACE = 271,                  /* LBRACE  */
-    RBRACE = 272,                  /* RBRACE  */
-    SEMI = 273                     /* SEMI  */
+    NUM = 261,                     /* NUM  */
+    WHILE = 262,                   /* WHILE  */
+    LPAREN = 263,                  /* LPAREN  */
+    RPAREN = 264,                  /* RPAREN  */
+    LBRACE = 265,                  /* LBRACE  */
+    RBRACE = 266,                  /* RBRACE  */
+    SEMICOLON = 267,               /* SEMICOLON  */
+    MODULO = 268,                  /* MODULO  */
+    ARITH = 269,                   /* ARITH  */
+    RELOP = 270,                   /* RELOP  */
+    LOGIC = 271,                   /* LOGIC  */
+    ASSIGN = 272,                  /* ASSIGN  */
+    INT = 273,                     /* INT  */
+    OPEN = 274,                    /* OPEN  */
+    HEADER = 275,                  /* HEADER  */
+    SCANF = 276,                   /* SCANF  */
+    PRINTF = 277,                  /* PRINTF  */
+    STRING = 278,                  /* STRING  */
+    COMMA = 279,                   /* COMMA  */
+    AMP = 280                      /* AMP  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
-/* Token kinds.  */
-#define YYEMPTY -2
-#define YYEOF 0
-#define YYerror 256
-#define YYUNDEF 257
-#define IF 258
-#define ELSE 259
-#define ID 260
-#define NUMBER 261
-#define LT 262
-#define GT 263
-#define LE 264
-#define GE 265
-#define EQ 266
-#define NE 267
-#define ASSIGN 268
-#define LPAREN 269
-#define RPAREN 270
-#define LBRACE 271
-#define RBRACE 272
-#define SEMI 273
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -109,4 +95,4 @@ extern YYSTYPE yylval;
 int yyparse (void);
 
 
-#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+#endif /* !YY_YY_PROG_TAB_H_INCLUDED  */
