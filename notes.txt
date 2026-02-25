@@ -34,3 +34,9 @@ identifiers and numbers and use it in Yacc.
 bison -d sample.y
 flex sample.l
 gcc lex.yy.c y.tab.c -o parser
+
+
+lab 3: 
+write code for syntax analysis of while loop constructs in c
+
+construt a symbol table which holds info(name,datatyope,offset,size,scope) on valid identifiers
