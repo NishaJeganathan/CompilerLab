@@ -40,3 +40,8 @@ lab 3:
 write code for syntax analysis of while loop constructs in c
 
 construt a symbol table which holds info(name,datatyope,offset,size,scope) on valid identifiers
+
+
+lab 5: 
+
+GENERATE INTERMEDIATE CODE FOR IF,IF...ELSE CONDITIONAL CONTRUCTS AND WHILE LOOP IN C
