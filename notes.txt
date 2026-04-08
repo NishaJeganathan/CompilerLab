@@ -45,3 +45,18 @@ construt a symbol table which holds info(name,datatyope,offset,size,scope) on va
 lab 5: 
 
 GENERATE INTERMEDIATE CODE FOR IF,IF...ELSE CONDITIONAL CONTRUCTS AND WHILE LOOP IN C
+
+lab 7:
+
+1. Simple Code generation
+2. DAG based Code generation
+To perform the second question, invoke DAG construction did in the
+previous lab. Then implement node listing algorithm to get the 
+order of evaluation from the constructed DAG. With this order 
+of evaluation invoke the same simple code generation algorithm.
+
+
+example:
+a=b+c;
+b=b+c;
+d=b+c;
